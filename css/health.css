@@ -1,0 +1,77 @@
+/* banner section starts */
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url(../img/healthy\ food.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.container .content {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: var(--text-black-700);
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--bg-black-100);
+    padding: 5%;
+}
+
+.container .content h1 {
+    font-size: 300%;
+    margin-bottom: 5%;
+}
+
+.container .content p {
+    font-size: 150%;
+    margin-bottom: 5%;
+}
+/* banner section ends */
+
+/* health section starts */
+.health {
+    background: var(--bg-white);
+    padding: 7% 2%;
+}
+
+.row {
+    margin: 8px -16px;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1rem;
+}
+
+.column {
+    width: 100%;
+    padding: 5% 0;
+}
+
+.content {
+    background-color: var(--white);
+    padding: 10px;
+}
+
+.content img {
+    width: 100%;
+    height: 30rem;
+}
+
+.content h3 {
+    width: 100%;
+    color: var(--black);
+    font-size: 170%;
+    margin-bottom: 5%;
+}
+
+.content p {
+    color: var(--black);
+    font-size: 100%;
+    margin-bottom: 5%;
+}
+
+.btn {
+    border-radius: 0;
+}
+/* health section ends */

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/voice_logo.png">
+    <title>Voice | Others</title>
+
+    <!-- font awsome cdn link -->
+    <link rel="stylesheet" href="./css/fontawesome.all.min.css"/>
+
+    <!-- swipper css cdn link -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body onload="initClock()">
+    <div class="main-container">
+
+        <!-- navbar section starts -->
+        <div class="navbar-side">
+            
+            <!-- date and time starts -->
+            <div class="date-time">
+                <div class="date">
+                    <span id="dayname">Day</span>,
+                    <span id="month">Month</span>
+                    <span id="daynum">00</span>,
+                    <span id="year">Year</span>
+                </div>
+
+                <div class="time">
+                    <span id="hour">00</span>:
+                    <span id="minute">00</span>:
+                    <span id="second">00</span>
+                    <span id="period">AM</span>
+                </div>
+            </div>
+            <!-- date and time ends -->
+
+            <!-- logo starts -->
+            <div class="logo">
+                <a href="./index.html"><img src="./img/voice_logo.png" alt="..."></a>
+            </div>
+            <!-- logo ends -->
+
+            <!-- nav links, night mode and search starts -->
+            <div class="navbar">
+            <div id="navbar-close" class="fas fa-times"></div>
+
+                <!-- nav links starts -->
+                <div class="menu-box">
+                    <a href="./index.html" class="active"><i class="fa fa-home"></i> Home</a>
+
+                    <div class="dropdown">
+                        <a href="#categories" class="dropdown-btn" onclick="myFunction()"><i class="fas fa-caret-down"></i> Categories</a>
+                        
+                        <div class="dropdown-links" id="dropdown">
+                            <a href="./health.html"><i class="fas fa-dot-circle"></i> Health</a>
+                            <a href="./sports.html"><i class="fas fa-dot-circle"></i> Sports</a>
+                            <a href="./beauty.html"><i class="fas fa-dot-circle"></i> Beauty</a>
+                            <a href="./technology.html"><i class="fas fa-dot-circle"></i> Technology</a>
+                            <a href="./others.html"><i class="fas fa-dot-circle"></i> Others</a>
+                        </div>
+                    </div>
+                    
+                    <a href="./aboutus.html"><i class="fa fa-user"></i> About Us</a>
+                    <a href="./contactus.html"><i class="fas fa-phone"></i> Contact Us</a>
+                </div>
+                <!-- nav links ends -->
+
+                <!-- night mode and search box starts -->
+                <div class="nightmode-searchbar">
+
+                    <!-- night mode starts -->
+                    <div class="nightmode">
+                        <i class="fas fa-moon" id="icon"></i>
+                    </div>
+                    <!-- night mode ends -->
+
+                    <!-- search form starts -->
+                    <div id="search-btn" class="fas fa-search"></div>
+
+                    <div class="search-form">
+                        <div id="close-search" class="fas fa-times"></div>
+
+                        <form action="">
+                            <input type="search" name="" placeholder="search here..." id="search-box">
+                            <label for="search-box" class="fas fa-search"></label>
+                        </form>
+                    </div>
+                    <!-- search form ends -->
+
+                </div>
+                <!-- night mode and search box ends -->
+
+            </div>
+            <!-- nav links, night mode and search ends -->
+
+            <div id="menu-dots" class="fas fa-ellipsis-v"></div>
+        </div>
+        <!-- navbar section ends -->
+
+        <div class="body-side">
+
+            <!-- banner section starts -->
+            <section class="banner-section" id="home">
+
+                <div class="swiper home-slider">
+
+                    <div class="swiper-wrapper">
+        
+                        <div class="swiper-slide">
+                            <div class="box" style="background: url(./img/slider-01.png) no-repeat;">
+                                <div class="content">
+                                    <span>others</span>
+                                    <h3>exploring</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi quisquam sequi fuga id quos harum inventore hic facilis necessitatibus.</p>
+                                    <a href="./aboutus.html" class="btn">read more</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-slide">
+                            <div class="box second" style="background: url(./img/slider-02.png) no-repeat;">
+                                <div class="content">
+                                    <span>others</span>
+                                    <h3>amazing</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi quisquam sequi fuga id quos harum inventore hic facilis necessitatibus.</p>
+                                    <a href="./aboutus.html" class="btn">read more</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-slide">
+                            <div class="box" style="background: url(./img/slider-03.png) no-repeat;">
+                                <div class="content">
+                                    <span>others</span>
+                                    <h3>new world</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi quisquam sequi fuga id quos harum inventore hic facilis necessitatibus.</p>
+                                    <a href="./aboutus.html" class="btn">read more</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+            <!-- banner section ends -->
+
+            <!-- others section starts -->
+            <section class="others-section">
+                <div class="others" id="others">
+                    <h2 class="heading">Others</h2>
+            
+                    <div class="swiper others-slider">
+            
+                        <div class="swiper-wrapper">
+            
+                            <div class="swiper-slide slide">
+                                <img src="./img/others-01.jpg" alt="">
+                                <div class="icons">
+                                    <a href="#"><i class="fas fa-calendar"></i> 21st may, 2021</a>
+                                    <a href="#"><i class="fas fa-user"></i> by admin</a>
+                                </div>
+                                <h3>Books here...</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, quod.</p>
+                                <a href="#" class="btn">read more</a>
+                            </div>
+            
+                            <div class="swiper-slide slide">
+                                <img src="./img/others-01.jpg" alt="">
+                                <div class="icons">
+                                    <a href="#"><i class="fas fa-calendar"></i> 21st may, 2021</a>
+                                    <a href="#"><i class="fas fa-user"></i> by admin</a>
+                                </div>
+                                <h3>Movies here...</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, quod.</p>
+                                <a href="#" class="btn">read more</a>
+                            </div>
+            
+                            <div class="swiper-slide slide">
+                                <img src="./img/others-01.jpg" alt="">
+                                <div class="icons">
+                                    <a href="#"><i class="fas fa-calendar"></i> 21st may, 2021</a>
+                                    <a href="#"><i class="fas fa-user"></i> by admin</a>
+                                </div>
+                                <h3>Musics here...</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, quod.</p>
+                                <a href="#" class="btn">read more</a>
+                            </div>
+            
+                            <div class="swiper-slide slide">
+                                <img src="./img/others-01.jpg" alt="">
+                                <div class="icons">
+                                    <a href="#"><i class="fas fa-calendar"></i> 21st may, 2021</a>
+                                    <a href="#"><i class="fas fa-user"></i> by admin</a>
+                                </div>
+                                <h3>Idols News here...</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, quod.</p>
+                                <a href="#" class="btn">read more</a>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- others section ends -->
+
+            <!-- footer section starts -->
+            <section class="footer-section">
+
+                <div class="footer">
+    
+                    <a href="#up" id="up"><i class="fas fa-angle-double-up"></i></a>
+    
+                    <div class="footer-icons">
+    
+                        <div class="social-icon twitter">
+                            <div class="tooltip">twitter</div>
+    
+                            <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                        </div>
+    
+                        <div class="social-icon facebook">
+                            <div class="tooltip">facebook</div>
+    
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        </div>
+                            
+                        <div class="social-icon youtube">
+                            <div class="tooltip">youtube</div>
+    
+                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        </div>
+    
+                        <div class="social-icon instagram">
+                            <div class="tooltip">instagram</div>
+    
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+    
+                    <div class="copyright-box">
+                        <div class="text-copyright"> 2022 all right reserved.</div>
+                        <div class="text-copyright"> developed by | Team 11 </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- footer section ends -->
+        </div>
+    </div>
+
+    <script src="./js/kit.fontawesome.js"></script>
+
+    <!-- swiper cdn js link -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!-- jquery link -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js link -->
+    <script src="./js/script.js"></script>
+
+    <script src="./js/date-time.js"></script>
+
+    <!-- custom jquery link -->
+    <script src="./js/jquery.js"></script>
+</body>
+
+</html>

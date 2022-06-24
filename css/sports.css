@@ -1,0 +1,42 @@
+/* sports page starts */
+.sports-page {
+    background: var(--bg-white);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 10% 2%;
+}
+
+.sports-page .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    gap: 1.5rem;
+}
+
+.sports-page .box-container .box {
+    border: solid .1rem var(--black);
+    box-shadow: 2px 2px 3px var(--black);
+    text-align: center;
+    padding: 1rem;
+}
+
+.sports-page .box-container .box img {
+    height: 24rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.sports-page .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--black);
+    text-shadow: 1px 1px 3px var(--red);
+}
+
+.sports-page .box-container .box p {
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+    line-height: 2;
+}
+/* sports page ends */

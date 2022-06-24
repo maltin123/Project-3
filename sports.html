@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/voice_logo.png">
+    <title>Voice | Sports</title>
+
+    <!-- font awsome cdn link -->
+    <link rel="stylesheet" href="./css/fontawesome.all.min.css"/>
+
+    <!-- swipper css cdn link -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sports.css">
+</head>
+
+<body onload="initClock()">
+    <div class="main-container">
+
+        <!-- navbar section starts -->
+        <div class="navbar-side">
+            
+            <!-- date and time starts -->
+            <div class="date-time">
+                <div class="date">
+                    <span id="dayname">Day</span>,
+                    <span id="month">Month</span>
+                    <span id="daynum">00</span>,
+                    <span id="year">Year</span>
+                </div>
+
+                <div class="time">
+                    <span id="hour">00</span>:
+                    <span id="minute">00</span>:
+                    <span id="second">00</span>
+                    <span id="period">AM</span>
+                </div>
+            </div>
+            <!-- date and time ends -->
+
+            <!-- logo starts -->
+            <div class="logo">
+                <a href="./index.html"><img src="./img/voice_logo.png" alt="..."></a>
+            </div>
+            <!-- logo ends -->
+
+            <!-- nav links, night mode and search starts -->
+            <div class="navbar">
+            <div id="navbar-close" class="fas fa-times"></div>
+
+                <!-- nav links starts -->
+                <div class="menu-box">
+                    <a href="./index.html" class="active"><i class="fa fa-home"></i> Home</a>
+
+                    <div class="dropdown">
+                        <a href="#categories" class="dropdown-btn" onclick="myFunction()"><i class="fas fa-caret-down"></i> Categories</a>
+                        
+                        <div class="dropdown-links" id="dropdown">
+                            <a href="./health.html"><i class="fas fa-dot-circle"></i> Health</a>
+                            <a href="./sports.html"><i class="fas fa-dot-circle"></i> Sports</a>
+                            <a href="./beauty.html"><i class="fas fa-dot-circle"></i> Beauty</a>
+                            <a href="./technology.html"><i class="fas fa-dot-circle"></i> Technology</a>
+                            <a href="./others.html"><i class="fas fa-dot-circle"></i> Others</a>
+                        </div>
+                    </div>
+                    
+                    <a href="./aboutus.html"><i class="fa fa-user"></i> About Us</a>
+                    <a href="./contactus.html"><i class="fas fa-phone"></i> Contact Us</a>
+                </div>
+                <!-- nav links ends -->
+
+                <!-- night mode and search box starts -->
+                <div class="nightmode-searchbar">
+
+                    <!-- night mode starts -->
+                    <div class="nightmode">
+                        <i class="fas fa-moon" id="icon"></i>
+                    </div>
+                    <!-- night mode ends -->
+
+                    <!-- search form starts -->
+                    <div id="search-btn" class="fas fa-search"></div>
+
+                    <div class="search-form">
+                        <div id="close-search" class="fas fa-times"></div>
+
+                        <form action="">
+                            <input type="search" name="" placeholder="search here..." id="search-box">
+                            <label for="search-box" class="fas fa-search"></label>
+                        </form>
+                    </div>
+                    <!-- search form ends -->
+
+                </div>
+                <!-- night mode and search box ends -->
+
+            </div>
+            <!-- nav links, night mode and search ends -->
+
+            <div id="menu-dots" class="fas fa-ellipsis-v"></div>
+        </div>
+        <!-- navbar section ends -->
+
+        <div class="body-side">
+
+            <!-- banner section starts -->
+            <section class="banner-section" id="home">
+
+                <div class="swiper home-slider">
+
+                    <div class="swiper-wrapper">
+        
+                        <div class="swiper-slide">
+                            <div class="box" style="background: url(./img/Football.jpg) no-repeat;">
+
+                                <div class="content">
+                                    <span>FootBall</span>
+                                    <h3>Final Match</h3>
+                                    <p>TEAM-A VS TEAM-Q <br>FIRDAY (9:00PM )</p>
+                                    <a href="#" class="btn">read more</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-slide">
+                            <div class="box second" style="background: url(./img/karatekata.jpg) no-repeat;">
+
+                                <div class="content">
+                                    <span>KARATE</span>
+                                    <h3>KATA World Champion(Female)</h3>
+                                    <p>Rika Usami of Japan. Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.</p>
+                                    <a href="#" class="btn">read more</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-slide">
+                            <div class="box" style="background: url(./img/MMA.jpg) no-repeat;">
+
+                                <div class="content">
+                                    <span>Mixed Martial Art </span>
+                                    <h3>Israel Adesanya still champ</h3>
+                                    <p> Israel Adesanya vs Robert Whittaker (UFC-276). Repellat aliquam earum saepe, aspernatur ut reiciendis corrupti labore reprehenderit cupiditate ipsum.</p>
+                                    <a href="#" class="btn">read more</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+            <!-- banner section ends -->
+
+            <!-- sports section starts -->
+            <section class="sports-section">
+                <div class="sports-page" id="sports">
+                        <h2 class="heading">sports</h2>
+            
+                    <div class="box-container">
+            
+                        <div class="box">
+                            <img src="./img/bjj.jpg" alt="">
+                            <h3>Jiu-Jitsu</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, laboriosam!</p>
+                            <a href="#" class="btn">read more</a>
+                        </div>
+            
+                        <div class="box">
+                            <img src="./img/Mike-Tyson .webp" alt="">
+                            <h3>Biography OF <br> Mike-Tyson
+                            </h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, laboriosam!</p>
+                            <a href="#" class="btn">read more</a>
+                        </div>
+            
+                        <div class="box">
+                            <img src="./img/karate.jpg" alt="">
+                            <h3>karate <br> kumite (WKF)</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, laboriosam!</p>
+                            <a href="#" class="btn">read more</a>
+                        </div>
+            
+                        <div class="box">
+                            <img src="./img/mortor cycling.jpg" alt="">
+                            <h3> mortorcycle <br> Racing</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, laboriosam!</p>
+                            <a href="#" class="btn">read more</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./img/running.jpg" alt="">
+                            <h3>long distance running</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, laboriosam!</p>
+                            <a href="#" class="btn">read more</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./img/snow skating.jpg" alt="">
+                            <h3>Alpine skiing </h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, laboriosam!</p>
+                            <a href="#" class="btn">read more</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./img/pexels-pixabay-73760.jpg" alt="">
+                            <h3>Swimming</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, laboriosam!</p>
+                            <a href="#" class="btn">read more</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./img/tekwondo.jpeg" alt="">
+                            <h3>Tekwondo</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, laboriosam!</p>
+                            <a href="#" class="btn">read more</a>
+                        </div>
+            
+                        <div class="box">
+                            <img src="./img/kickboxing.jpg" alt="">
+                            <h3>Boxing</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, laboriosam!</p>
+                            <a href="#" class="btn">read more</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="./img/tennis.jpg" alt="">
+                            <h3>Tennis</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, laboriosam!</p>
+                            <a href="#" class="btn">read more</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- sports section ends -->
+
+            <!-- footer section starts -->
+            <section class="footer-section">
+
+                <div class="footer">
+    
+                    <a href="#up" id="up"><i class="fas fa-angle-double-up"></i></a>
+    
+                    <div class="footer-icons">
+    
+                        <div class="social-icon twitter">
+                            <div class="tooltip">twitter</div>
+    
+                            <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                        </div>
+    
+                        <div class="social-icon facebook">
+                            <div class="tooltip">facebook</div>
+    
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        </div>
+                            
+                        <div class="social-icon youtube">
+                            <div class="tooltip">youtube</div>
+    
+                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        </div>
+    
+                        <div class="social-icon instagram">
+                            <div class="tooltip">instagram</div>
+    
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+    
+                    <div class="copyright-box">
+                        <div class="text-copyright"> 2022 all right reserved.</div>
+                        <div class="text-copyright"> developed by | Team 11 </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- footer section ends -->
+        </div>
+    </div>
+
+    <script src="./js/kit.fontawesome.js"></script>
+
+    <!-- swiper cdn js link -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!-- jquery link -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js link -->
+    <script src="./js/script.js"></script>
+
+    <script src="./js/date-time.js"></script>
+
+    <!-- custom jquery link -->
+    <script src="./js/jquery.js"></script>
+</body>
+
+</html>
